@@ -27,5 +27,5 @@ Follow these steps to run the application
     run `php artisan migrate:fresh --seed`
     
 2. Usage guide
-    It's for auth server. I have used laravel passport package for this. After installation you need to run `php artisan passport:keys` to generate passport encryption key. Then `php artisan passport:client` to generate credentials for client (Food website) then use the generated client id and client secret to the food site's env. One default user is in the seeder, the credential is-
+    It's for auth server. I have used laravel passport package for this. After installation you need to run `php artisan passport:keys` to generate passport encryption key. Then `php artisan passport:client` to generate credentials for client (Food website), you will be asked for callback url, enter `yourclientdomain/oauth/callback` for callback, then use the generated client id and client secret to the food site's env. One default user is in the seeder, the credential is-
     admin@example.com / 123456
